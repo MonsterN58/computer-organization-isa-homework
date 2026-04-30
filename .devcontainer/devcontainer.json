@@ -1,0 +1,5 @@
+{
+  "name": "QEMU User 6.2 ISA Lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y qemu-user qemu-user-static gcc-arm-linux-gnueabihf gcc-riscv64-linux-gnu binutils-arm-linux-gnueabihf binutils-riscv64-linux-gnu"
+}
