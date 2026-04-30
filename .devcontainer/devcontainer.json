@@ -1,5 +1,10 @@
 {
-  "name": "QEMU User 6.2 ISA Lab",
+  "name": "QEMU User 6.2 ISA Lab with JupyterLab",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "installJupyterlab": true
+    }
+  },
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y qemu-user qemu-user-static gcc-arm-linux-gnueabihf gcc-riscv64-linux-gnu binutils-arm-linux-gnueabihf binutils-riscv64-linux-gnu"
 }
